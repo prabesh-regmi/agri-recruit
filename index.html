@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agri Recruit - Connecting Agriculture</title>
+  <title>Binomial Time Unip. Lda - Connecting Agriculture</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -115,16 +115,108 @@
         transform: translateY(0);
       }
     }
+
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      background-color: #F7F5E6;
+      color: #000000;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      background-color: #F2C94C;
+      color: #2D6A4F;
+      font-weight: bold;
+      border-radius: 9999px;
+      box-shadow: 0 2px 8px 0 rgba(44, 106, 79, 0.08);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+      background-color: #D4AC2B;
+      color: #fff;
+    }
+
+    .card-box {
+      background-color: #E9E4D4;
+      color: #2D6A4F;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px 0 rgba(44, 106, 79, 0.06);
+    }
+
+    .header-footer {
+      background-color: #2D6A4F;
+      color: #F7F5E6;
+    }
+
+    .header-footer .text-white,
+    .header-footer .text-light-cream {
+      color: #F7F5E6 !important;
+    }
+
+    .header-footer .logo-text {
+      color: #fff;
+    }
+
+    .header-footer a {
+      color: #F7F5E6;
+      transition: color 0.2s;
+    }
+
+    .header-footer a:hover {
+      color: #F2C94C;
+    }
+
+    .hero-bg-section {
+      background-image: url('/assets/images/hero-bg.jpg');
+      /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .hero-bg-section>.relative {
+      position: relative;
+      z-index: 1;
+    }
+    .form-error {
+      color: #d32f2f;
+      font-size: 0.95rem;
+      margin-top: 0.25rem;
+      font-weight: 600;
+    }
+    /* Responsive Ireland (island) section width and padding */
+    @media (max-width: 768px) {
+      .island-section {
+        width: 90% !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+      }
+    }
   </style>
+  <!-- Google Fonts: Montserrat & Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
 </head>
 
-<body class="bg-white text-black overflow-x-hidden">
+<body class="overflow-x-hidden">
   <!-- Navigation -->
   <nav id="navbar"
-    class="nav-transition absolute top-6 left-1/2 transform -translate-x-1/2 z-50 bg-forest-green rounded-full px-16 py-2 shadow-lg w-[70%] max-w-5xl">
+    class="header-footer nav-transition absolute top-6 left-1/2 transform -translate-x-1/2 z-50 rounded-full px-16 py-2 shadow-lg w-[70%] max-w-5xl">
     <div class="flex items-center justify-between w-full">
       <div class="text-white font-bold text-xl">
-        <img src="/assets/images/logo.png" alt="Agri Recruit Logo" class="w-12 h-12" />
+        <img src="/assets/images/logo.png" alt="Binomial Time Unip. Lda Logo" class="w-12 h-12" />
       </div>
       <div class="hidden md:flex space-x-12">
         <a href="#home" class="text-white hover:text-warm-yellow transition-colors duration-300">Home</a>
@@ -141,92 +233,56 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="min-h-screen relative flex items-center justify-center px-4 pt-20 bg-light-cream text-forest-green">
-    <!-- Animated Background SVG Elements -->
-    <div class="absolute inset-0 overflow-hidden">
-      <!-- Floating Leaves -->
-      <svg class="absolute top-20 left-10 w-16 h-16 text-forest-green opacity-30 floating-animation" viewBox="0 0 24 24"
-        fill="currentColor">
-        <path
-          d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1L13.5 2.5L16.17 5.17L14.24 7.1C13.45 6.8 12.6 6.63 11.74 6.63C7.57 6.63 3.5 9.51 2.48 14.06C2.39 14.5 2.34 14.94 2.34 15.38C2.34 18.64 4.67 21.37 7.93 21.37C10.19 21.37 12.34 20.44 13.94 18.94C14.27 18.65 14.27 18.2 13.94 17.91C13.65 17.62 13.2 17.62 12.91 17.91C11.54 19.18 9.74 19.9 7.93 19.9C5.5 19.9 3.81 17.91 3.81 15.38C3.81 15.09 3.84 14.8 3.9 14.52C4.74 10.9 8.1 8.1 11.74 8.1C12.42 8.1 13.1 8.2 13.76 8.39L12.83 9.32C12.64 9.5 12.64 9.79 12.83 9.97L14.44 11.58C14.63 11.77 14.92 11.77 15.1 11.58L21 5.68V9H21Z" />
-      </svg>
-
-      <svg class="absolute top-40 right-20 w-20 h-20 text-warm-yellow opacity-40 floating-animation" viewBox="0 0 24 24"
-        fill="currentColor">
-        <path
-          d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z" />
-      </svg>
-
-      <svg class="absolute bottom-32 left-20 w-24 h-24 text-forest-green opacity-20 grow-animation" viewBox="0 0 24 24"
-        fill="currentColor">
-        <path
-          d="M12,2L13,8L12,14L11,8L12,2M12,15A7,7 0 0,1 5,8A7,7 0 0,1 12,1A7,7 0 0,1 19,8A7,7 0 0,1 12,15M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6Z" />
-      </svg>
-
-      <!-- Tractor SVG -->
-      <svg class="absolute bottom-20 right-10 w-32 h-32 text-forest-green opacity-25 pulse-animation"
-        viewBox="0 0 24 24" fill="currentColor">
-        <path
-          d="M5,15A3,3 0 0,0 2,18A3,3 0 0,0 5,21A3,3 0 0,0 8,18A3,3 0 0,0 5,15M19,15A3,3 0 0,0 16,18A3,3 0 0,0 19,21A3,3 0 0,0 22,18A3,3 0 0,0 19,15M5,17A1,1 0 0,1 6,18A1,1 0 0,1 5,19A1,1 0 0,1 4,18A1,1 0 0,1 5,17M19,17A1,1 0 0,1 20,18A1,1 0 0,1 19,19A1,1 0 0,1 18,18A1,1 0 0,1 19,17M15,6V4H13V6H10L8,4V8H6V10H8V16H10V13H14V11H16V13H21V11H16V6H15Z" />
-      </svg>
-    </div>
+  <section
+    class="min-h-screen relative flex items-center justify-center px-4 pt-20 bg-[#F7F5E6] text-white hero-bg-section">
+    <div class="absolute inset-0 bg-black bg-opacity-30 pointer-events-none z-0"></div>
 
     <!-- Hero Content -->
     <div class="relative z-10 text-center max-w-4xl mx-auto">
       <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in-up">
-        <span class="text-forest-green">Agri</span><span class="text-warm-yellow">Recruit</span>
+        <span class="text-white">Binomial Time</span><span class="text-warm-yellow"> Unip. Lda</span>
       </h1>
 
-      <p class="text-xl md:text-2xl text-forest-green font-medium mb-4 fade-in-up" style="animation-delay: 0.2s">
-        Connecting Agriculture, Cultivating Future
+      <p class="text-xl md:text-2xl font-medium mb-4 fade-in-up" style="animation-delay: 0.2s">
+        Empowering Growth Across Agriculture, Construction, and Green Spaces
       </p>
 
-      <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed fade-in-up"
-        style="animation-delay: 0.4s">
-        We bridge the gap between talented agricultural professionals and
-        innovative farms, while empowering farmers with cutting-edge
-        technologies to revolutionize modern agriculture.
+      <p class="mb-8 text-lg md:text-xl fade-in-up" style="animation-delay: 0.4s">
+        We provide reliable workforce solutions for agricultural work, fruit picking, civil construction, gardening, and maintenance—helping your business grow and succeed with dedicated professionals.
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in-up" style="animation-delay: 0.6s">
-        <button
-          class="bg-warm-yellow hover:bg-darker-yellow text-forest-green hover:text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+        <button class="btn-primary py-4 px-8 font-bold transition-all duration-300 transform hover:scale-105 shadow-lg">
           Find Talent
         </button>
         <button
-          class="bg-forest-green hover:bg-black text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+          class="bg-white hover:bg-warm-yellow text-forest-green hover:text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg ml-0 sm:ml-4">
           Explore Technology
         </button>
       </div>
     </div>
 
-    <!-- Scroll Indicator -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-      <svg class="w-6 h-6 text-forest-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-      </svg>
-    </div>
   </section>
 
   <!-- Statistics Section -->
-  <section class="py-16 bg-warm-yellow text-forest-green">
+  <section class="py-16 bg-light-cream text-forest-green">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div class="fade-in-up-animate">
-          <div class="text-5xl font-bold text-forest-green mb-2 countup" data-target="500">0</div>
-          <div class="text-lg text-gray-700">Total Recruits</div>
+        <div class="fade-in-up-animate card-box py-8 shadow-xl bg-forest-green text-white">
+          <div class="text-5xl font-bold mb-2 countup" data-target="350">0</div>
+          <div class="text-lg">Agricultural Projects<br/> Completed</div>
         </div>
-        <div class="fade-in-up-animate">
-          <div class="text-5xl font-bold text-forest-green mb-2 countup" data-target="10">0</div>
-          <div class="text-lg text-gray-700">Years of Experience</div>
+        <div class="fade-in-up-animate card-box py-8 shadow-xl bg-forest-green text-white">
+          <div class="text-5xl font-bold mb-2 countup" data-target="120">0</div>
+          <div class="text-lg">Fruit Picking <br/> Campaigns</div>
         </div>
-        <div class="fade-in-up-animate">
-          <div class="text-5xl font-bold text-forest-green mb-2 countup" data-target="200">0</div>
-          <div class="text-lg text-gray-700">Partner Locations</div>
+        <div class="fade-in-up-animate card-box py-8 shadow-xl bg-forest-green text-white">
+          <div class="text-5xl font-bold mb-2 countup" data-target="80">0</div>
+          <div class="text-lg">Construction & Maintenance <br/> Sites</div>
         </div>
-        <div class="fade-in-up-animate">
-          <div class="text-5xl font-bold text-forest-green mb-2 countup" data-target="50">0</div>
-          <div class="text-lg text-gray-700">Technology Solutions</div>
+        <div class="fade-in-up-animate card-box py-8 shadow-xl bg-forest-green text-white">
+          <div class="text-5xl font-bold mb-2 countup" data-target="15">0</div>
+          <div class="text-lg">Gardening Teams <br/> Deployed</div>
         </div>
       </div>
     </div>
@@ -235,61 +291,32 @@
   <!-- Services Section -->
   <section id="services" class="py-20 bg-light-beige text-forest-green">
     <div class="container mx-auto px-4">
-      <div class="text-center mb-16 fade-in-up-animate">
-        <h2 class="text-4xl md:text-5xl font-bold text-forest-green mb-6">Our Services</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Bridging the gap between agricultural talent and innovation through comprehensive recruitment and technology
-          solutions
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">Our Services</h2>
+        <p class="text-xl max-w-3xl mx-auto">
+          Comprehensive workforce and project solutions for agriculture, construction, and green spaces.
         </p>
       </div>
-
-      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        <!-- Talent Recruitment -->
-        <div
-          class="bg-light-beige rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 fade-in-up-animate">
-          <div class="w-16 h-16 bg-warm-yellow rounded-full flex items-center justify-center mb-6">
-            <svg class="w-8 h-8 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" />
-            </svg>
-          </div>
-          <h3 class="text-2xl font-bold text-forest-green mb-4">Talent Recruitment</h3>
-          <p class="text-gray-700 leading-relaxed">
-            Connect with skilled agricultural professionals, from farm managers to agricultural engineers,
-            ensuring the right talent for your agricultural operations.
-          </p>
+      <div class="grid md:grid-cols-5 gap-8">
+        <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
+          <h3 class="text-2xl font-bold mb-4 text-forest-green">Agricultural Work</h3>
+          <p class="mb-4 text-lg">Professional teams for planting, harvesting, and field management to maximize your yield.</p>
         </div>
-
-        <!-- Technology Solutions -->
-        <div
-          class="bg-light-beige rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 fade-in-up-animate">
-          <div class="w-16 h-16 bg-warm-yellow rounded-full flex items-center justify-center mb-6">
-            <svg class="w-8 h-8 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M12 2L2 7V10C2 16 6 20.5 12 22C18 20.5 22 16 22 10V7L12 2ZM12 8C13.1 8 14 8.9 14 10C14 11.1 13.1 12 12 12C10.9 12 10 11.1 10 10C10 8.9 10.9 8 12 8ZM12 14C13.63 14 15 14.75 15 16V17H9V16C9 14.75 10.37 14 12 14Z" />
-            </svg>
-          </div>
-          <h3 class="text-2xl font-bold text-forest-green mb-4">Technology Solutions</h3>
-          <p class="text-gray-700 leading-relaxed">
-            Empower your farm with cutting-edge agricultural technologies, from precision farming tools
-            to smart irrigation systems and crop monitoring solutions.
-          </p>
+        <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
+          <h3 class="text-2xl font-bold mb-4 text-forest-green">Fruit Picking</h3>
+          <p class="mb-4 text-lg">Skilled pickers for efficient and careful fruit harvesting, ensuring quality and speed.</p>
         </div>
-
-        <!-- Farmer Support -->
-        <div
-          class="bg-light-beige rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 fade-in-up-animate">
-          <div class="w-16 h-16 bg-warm-yellow rounded-full flex items-center justify-center mb-6">
-            <svg class="w-8 h-8 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2ZM12 15.5A3.5 3.5 0 1 0 12 8.5A3.5 3.5 0 0 0 12 15.5Z" />
-            </svg>
-          </div>
-          <h3 class="text-2xl font-bold text-forest-green mb-4">Farmer Support</h3>
-          <p class="text-gray-700 leading-relaxed">
-            Comprehensive support for farmers including training programs, financial guidance,
-            and access to modern agricultural practices to maximize productivity.
-          </p>
+        <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
+          <h3 class="text-2xl font-bold mb-4 text-forest-green">Civil Construction</h3>
+          <p class="mb-4 text-lg">Reliable labor for construction projects, site preparation, and infrastructure support.</p>
+        </div>
+        <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
+          <h3 class="text-2xl font-bold mb-4 text-forest-green">Gardening</h3>
+          <p class="mb-4 text-lg">Expert gardening teams for landscaping, maintenance, and beautification of green spaces.</p>
+        </div>
+        <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
+          <h3 class="text-2xl font-bold mb-4 text-forest-green">Maintenance</h3>
+          <p class="mb-4 text-lg">Comprehensive maintenance services for farms, facilities, and outdoor environments.</p>
         </div>
       </div>
     </div>
@@ -298,58 +325,30 @@
   <!-- About Section -->
   <section id="about" class="py-20 bg-white text-forest-green">
     <div class="container mx-auto px-4">
-      <div class="max-w-6xl mx-auto">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div class="fade-in-up-animate">
-            <h2 class="text-4xl md:text-5xl font-bold text-forest-green mb-6">About AgriRecruit</h2>
-            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-              Founded with a vision to revolutionize agriculture through strategic talent acquisition and
-              technology integration, AgriRecruit serves as the bridge between traditional farming wisdom
-              and modern agricultural innovation.
-            </p>
-            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-              We understand the unique challenges facing today's agricultural industry and provide
-              comprehensive solutions that address both human capital needs and technological advancement.
-            </p>
-
-            <div class="space-y-4">
-              <div class="flex items-center">
-                <div class="w-8 h-8 bg-warm-yellow rounded-full flex items-center justify-center mr-4">
-                  <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" />
-                  </svg>
-                </div>
-                <span class="text-lg font-medium text-forest-green">10+ Years of Agricultural Expertise</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-8 h-8 bg-warm-yellow rounded-full flex items-center justify-center mr-4">
-                  <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" />
-                  </svg>
-                </div>
-                <span class="text-lg font-medium text-forest-green">500+ Successful Placements</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-8 h-8 bg-warm-yellow rounded-full flex items-center justify-center mr-4">
-                  <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" />
-                  </svg>
-                </div>
-                <span class="text-lg font-medium text-forest-green">200+ Partner Farms</span>
-              </div>
-            </div>
-          </div>
-
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="fade-in-up-animate">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">About Binomial Time Unip. Lda</h2>
+          <p class="text-xl mb-6">
+            Binomial Time Unip. Lda specializes in providing skilled teams for agricultural work, fruit picking, civil construction, gardening, and maintenance. Our mission is to support businesses and communities with reliable, efficient, and professional workforce solutions.
+          </p>
+          <ul class="list-disc pl-6 space-y-2 text-lg">
+            <li>Dedicated teams for every project</li>
+            <li>Expertise across agriculture, construction, and green spaces</li>
+            <li>Commitment to quality, safety, and client satisfaction</li>
+          </ul>
+        </div>
+        <div class="fade-in-up-animate">
           <div class="relative">
-            <div
-              class="bg-forest-green rounded-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300 fade-in-up-animate">
+            <div class="card-box rounded-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300 fade-in-up-animate"
+              style="background-color: #2D6A4F; color: #F7F5E6;">
               <div class="bg-warm-yellow rounded-xl p-6">
                 <h3 class="text-2xl font-bold text-forest-green mb-4">Our Mission</h3>
-                <p class="text-forest-green leading-relaxed">
-                  To create a sustainable future for agriculture by connecting passionate professionals
-                  with innovative farms and providing farmers with the tools they need to thrive in
-                  the modern agricultural landscape.
-                </p>
+                <p class="mb-2 text-lg text-forest-green">To deliver trusted workforce and project solutions for agriculture, construction, and green spaces, supporting our clients' growth and success.</p>
+                <ul class="list-disc pl-6 text-forest-green">
+                  <li>Skilled labor for every season and project</li>
+                  <li>Reliable, safe, and efficient service</li>
+                  <li>Building lasting partnerships</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -359,52 +358,16 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-light-beige text-forest-green">
+  <section id="contact" class="py-20 bg-[#E9E4D4] text-forest-green">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
-        <p class="text-xl max-w-3xl mx-auto">
+        <p class="text-xl max-w-4xl mx-auto">
           Ready to transform your agricultural operations? Let's connect and explore how we can help you grow.
         </p>
       </div>
 
-      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
-        <!-- Contact Form -->
-        <div class="bg-white rounded-2xl p-8 fade-in-up-animate">
-          <h3 class="text-2xl font-bold text-forest-green mb-6">Send us a message</h3>
-          <form class="space-y-6">
-            <div>
-              <label class="block text-forest-green font-medium mb-2">Name</label>
-              <input type="text"
-                class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow">
-            </div>
-            <div>
-              <label class="block text-forest-green font-medium mb-2">Email</label>
-              <input type="email"
-                class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow">
-            </div>
-            <div>
-              <label class="block text-forest-green font-medium mb-2">Subject</label>
-              <select
-                class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow">
-                <option>Talent Recruitment</option>
-                <option>Technology Solutions</option>
-                <option>Farmer Support</option>
-                <option>Partnership Inquiry</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-forest-green font-medium mb-2">Message</label>
-              <textarea rows="4"
-                class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow resize-none"></textarea>
-            </div>
-            <button type="submit"
-              class="w-full bg-warm-yellow hover:bg-darker-yellow text-forest-green font-bold py-3 px-6 rounded-lg transition-colors duration-300">
-              Send Message
-            </button>
-          </form>
-        </div>
-
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 ">
         <!-- Contact Information -->
         <div class="fade-in-up-animate">
           <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
@@ -431,7 +394,7 @@
               </div>
               <div>
                 <h4 class="font-bold text-lg mb-2">Phone</h4>
-                <p>+1 (555) 123-4567</p>
+                <p><a href="tel:920413437" class="hover:underline">92 041 34 37</a></p>
               </div>
             </div>
 
@@ -444,7 +407,7 @@
               </div>
               <div>
                 <h4 class="font-bold text-lg mb-2">Email</h4>
-                <p>info@agrirecruit.com</p>
+                <p><a href="mailto:binomialtimeunipessoal@gmail.com" class="hover:underline">binomialtimeunipessoal@gmail.com</a></p>
               </div>
             </div>
           </div>
@@ -476,17 +439,45 @@
             </div>
           </div>
         </div>
+        <!-- Contact Form -->
+        <div class="card-box bg-white rounded-2xl p-8 fade-in-up-animate max-w-2xl w-full mx-auto col-span-2" style="color:#2D6A4F;">
+          <h3 class="text-2xl font-bold text-forest-green mb-6">Send us a message</h3>
+          <form class="space-y-6" id="contactForm" novalidate>
+            <div>
+              <label class="block text-forest-green font-medium mb-2" for="contactName">Name</label>
+              <input type="text" id="contactName" name="name" placeholder="Your Name" class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow">
+              <div class="form-error" id="errorName" style="display:none;"></div>
+            </div>
+            <div>
+              <label class="block text-forest-green font-medium mb-2" for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" name="email" placeholder="you@email.com" class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow">
+              <div class="form-error" id="errorEmail" style="display:none;"></div>
+            </div>
+            <div>
+              <label class="block text-forest-green font-medium mb-2" for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" name="subject" placeholder="Subject" class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow">
+              <div class="form-error" id="errorSubject" style="display:none;"></div>
+            </div>
+            <div>
+              <label class="block text-forest-green font-medium mb-2" for="contactMessage">Message</label>
+              <textarea rows="4" id="contactMessage" name="message" placeholder="Your message..." class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow resize-none"></textarea>
+            </div>
+            <button type="submit" class="w-full btn-primary py-3 px-6 text-lg">
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-forest-green text-light-cream py-12">
+  <footer class="header-footer py-12">
     <div class="container mx-auto px-4">
-      <div class="grid md:grid-cols-4 gap-8">
-        <div>
+      <div class="grid md:grid-cols-5 gap-8">
+        <div class="col-span-2 max-w-sm">
           <div class="text-2xl font-bold mb-4">
-            Agri<span class="text-warm-yellow">Recruit</span>
+            Binomial Time <span class="text-warm-yellow">Unip. Lda</span>
           </div>
           <p class="text-light-cream leading-relaxed">
             Connecting agriculture with the future through talent and technology.
@@ -496,10 +487,11 @@
         <div>
           <h4 class="font-bold text-lg mb-4">Services</h4>
           <ul class="space-y-2 text-light-cream/80">
-            <li><a href="#" class="hover:text-warm-yellow transition-colors">Talent Recruitment</a></li>
-            <li><a href="#" class="hover:text-warm-yellow transition-colors">Technology Solutions</a></li>
-            <li><a href="#" class="hover:text-warm-yellow transition-colors">Farmer Support</a></li>
-            <li><a href="#" class="hover:text-warm-yellow transition-colors">Consulting</a></li>
+            <li><a href="#" class="hover:text-warm-yellow transition-colors">Agricultural Work</a></li>
+            <li><a href="#" class="hover:text-warm-yellow transition-colors">Fruit Picking</a></li>
+            <li><a href="#" class="hover:text-warm-yellow transition-colors">Civil Construction</a></li>
+            <li><a href="#" class="hover:text-warm-yellow transition-colors">Gardening</a></li>
+            <li><a href="#" class="hover:text-warm-yellow transition-colors">Maintenance</a></li>
           </ul>
         </div>
 
@@ -523,7 +515,7 @@
       </div>
 
       <div class="border-t border-light-cream/30 mt-8 pt-8 text-center text-light-cream/80">
-        <p>&copy; 2025 AgriRecruit. All rights reserved.</p>
+        <p>&copy; 2025 Binomial Time Unip. Lda. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -597,7 +589,7 @@
     // Scroll to top on logo or Home click
     document.addEventListener("DOMContentLoaded", function () {
       // Logo image
-      const logoImg = document.querySelector('img[alt="Agri Recruit Logo"]');
+      const logoImg = document.querySelector('img[alt="Binomial Time Unip. Lda Logo"]');
       if (logoImg) {
         logoImg.style.cursor = "pointer";
         logoImg.addEventListener("click", function () {
@@ -675,6 +667,49 @@
         });
       }, { threshold: 0.2 });
       animatedEls.forEach(el => observer.observe(el));
+    });
+  </script>
+  <script>
+    // Contact form validation
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('contactForm');
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        let hasError = false;
+        // Clear previous errors
+        ["errorName", "errorEmail", "errorSubject"].forEach(id => {
+          document.getElementById(id).style.display = "none";
+          document.getElementById(id).textContent = "";
+        });
+        // Name
+        const name = form.name.value.trim();
+        if (!name) {
+          document.getElementById('errorName').textContent = 'Name is required.';
+          document.getElementById('errorName').style.display = 'block';
+          hasError = true;
+        }
+        // Email
+        const email = form.email.value.trim();
+        if (!email) {
+          document.getElementById('errorEmail').textContent = 'Email is required.';
+          document.getElementById('errorEmail').style.display = 'block';
+          hasError = true;
+        } else if (!/^\S+@\S+\.\S+$/.test(email)) {
+          document.getElementById('errorEmail').textContent = 'Please enter a valid email address.';
+          document.getElementById('errorEmail').style.display = 'block';
+          hasError = true;
+        }
+        // Subject
+        const subject = form.subject.value.trim();
+        if (!subject) {
+          document.getElementById('errorSubject').textContent = 'Subject is required.';
+          document.getElementById('errorSubject').style.display = 'block';
+          hasError = true;
+        }
+        if (hasError) {
+          e.preventDefault();
+        }
+      });
     });
   </script>
 </body>
