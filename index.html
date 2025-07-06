@@ -240,10 +240,10 @@
         <img src="assets/images/logo.png" alt="Binomial Time Unip. Lda Logo" class="w-12 h-12" />
       </div>
       <div class="hidden md:flex space-x-12">
-        <a href="#home" class="text-white hover:text-warm-yellow transition-colors duration-300">Home</a>
-        <a href="#services" class="text-white hover:text-warm-yellow transition-colors duration-300">Services</a>
-        <a href="#about" class="text-white hover:text-warm-yellow transition-colors duration-300">About</a>
-        <a href="#contact" class="text-white hover:text-warm-yellow transition-colors duration-300">Contact</a>
+        <a href="#home" class="text-white hover:text-warm-yellow transition-colors duration-300" data-en="Home" data-pt="Início">Home</a>
+        <a href="#services" class="text-white hover:text-warm-yellow transition-colors duration-300" data-en="Services" data-pt="Serviços">Services</a>
+        <a href="#about" class="text-white hover:text-warm-yellow transition-colors duration-300" data-en="About" data-pt="Sobre">About</a>
+        <a href="#contact" class="text-white hover:text-warm-yellow transition-colors duration-300" data-en="Contact" data-pt="Contacto">Contact</a>
       </div>
       <button class="md:hidden text-white">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -252,6 +252,17 @@
       </button>
     </div>
   </nav>
+
+  <!-- Language Switcher -->
+  <div class="absolute top-1 right-1 z-50">
+    <div class="bg-white bg-opacity-90 rounded-full px-6 py-0 shadow-lg">
+      <button id="languageBtn" class="text-black text-xs font-medium">
+        <span id="enLang" class="language-option cursor-pointer" data-lang="en">EN</span>
+        <span class="mx-1">|</span>
+        <span id="ptLang" class="language-option cursor-pointer" data-lang="pt">PT</span>
+      </button>
+    </div>
+  </div>
 
   <!-- Hero Section -->
   <section class="min-h-screen relative flex items-center justify-center px-4 pt-20 bg-[#F7F5E6] text-white overflow-hidden">
@@ -269,23 +280,23 @@
     <!-- Hero Content -->
     <div class="relative z-10 text-center max-w-4xl mx-auto">
       <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in-up">
-        <span class="text-white">Binomial Time</span><span class="text-warm-yellow"> Unip. Lda</span>
+        <span class="text-white" data-en="Binomial Time" data-pt="Binomial Time">Binomial Time</span><span class="text-warm-yellow"> Unip. Lda</span>
       </h1>
 
-      <p class="text-xl md:text-2xl font-medium mb-4 fade-in-up" style="animation-delay: 0.2s">
+      <p class="text-xl md:text-2xl font-medium mb-4 fade-in-up" style="animation-delay: 0.2s" data-en="Empowering Growth Across Agriculture, Construction, and Green Spaces" data-pt="Potenciando o Crescimento na Agricultura, Construção e Espaços Verdes">
         Empowering Growth Across Agriculture, Construction, and Green Spaces
       </p>
 
-      <p class="mb-8 text-lg md:text-xl fade-in-up" style="animation-delay: 0.4s">
+      <p class="mb-8 text-lg md:text-xl fade-in-up" style="animation-delay: 0.4s" data-en="We provide reliable workforce solutions for agricultural work, fruit picking, civil construction, gardening, and maintenance—helping your business grow and succeed with dedicated professionals." data-pt="Fornecemos soluções confiáveis de força de trabalho para trabalhos agrícolas, colheita de frutas, construção civil, jardinagem e manutenção—ajudando seu negócio a crescer e ter sucesso com profissionais dedicados.">
         We provide reliable workforce solutions for agricultural work, fruit picking, civil construction, gardening, and maintenance—helping your business grow and succeed with dedicated professionals.
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in-up" style="animation-delay: 0.6s">
-        <button class="btn-primary py-4 px-8 font-bold transition-all duration-300 transform hover:scale-105 shadow-lg">
+        <button class="btn-primary py-4 px-8 font-bold transition-all duration-300 transform hover:scale-105 shadow-lg" data-en="Find Talent" data-pt="Encontrar Talento">
           Find Talent
         </button>
         <button
-          class="bg-white hover:bg-warm-yellow text-forest-green hover:text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg ml-0 sm:ml-4">
+          class="bg-white hover:bg-warm-yellow text-forest-green hover:text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg ml-0 sm:ml-4" data-en="Explore Technology" data-pt="Explorar Tecnologia">
           Explore Technology
         </button>
       </div>
@@ -321,31 +332,31 @@
   <section id="services" class="py-20 bg-light-beige text-forest-green">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6">Our Services</h2>
-        <p class="text-xl max-w-3xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6" data-en="Our Services" data-pt="Nossos Serviços">Our Services</h2>
+        <p class="text-xl max-w-3xl mx-auto" data-en="Comprehensive workforce and project solutions for agriculture, construction, and green spaces." data-pt="Soluções abrangentes de força de trabalho e projetos para agricultura, construção e espaços verdes.">
           Comprehensive workforce and project solutions for agriculture, construction, and green spaces.
         </p>
       </div>
-      <div class="grid md:grid-cols-5 gap-8">
-        <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
-          <h3 class="text-2xl font-bold mb-4 text-forest-green">Cleaning Service</h3>
-          <p class="mb-4 text-lg">Professional cleaning teams for residential, commercial, and industrial spaces with attention to detail.</p>
+      <div class="grid md:grid-cols-5 gap-4">
+        <div class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2">
+          <h3 class="text-2xl font-bold mb-4 text-forest-green" data-en="Cleaning Service" data-pt="Serviço de Limpeza">Cleaning Service</h3>
+          <p class="mb-4 text-lg" data-en="Professional cleaning teams for residential, commercial, and industrial spaces with attention to detail." data-pt="Equipas profissionais de limpeza para espaços residenciais, comerciais e industriais com atenção aos detalhes.">Professional cleaning teams for residential, commercial, and industrial spaces with attention to detail.</p>
         </div>
-        <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
-          <h3 class="text-2xl font-bold mb-4 text-forest-green">Gardening</h3>
-          <p class="mb-4 text-lg">Expert gardening teams for landscaping, maintenance, and beautification of green spaces.</p>
+        <div class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2">
+          <h3 class="text-2xl font-bold mb-4 text-forest-green" data-en="Gardening" data-pt="Jardinagem">Gardening</h3>
+          <p class="mb-4 text-lg" data-en="Expert gardening teams for landscaping, maintenance, and beautification of green spaces." data-pt="Equipas especializadas em jardinagem para paisagismo, manutenção e embelezamento de espaços verdes.">Expert gardening teams for landscaping, maintenance, and beautification of green spaces.</p>
         </div>
-        <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
-          <h3 class="text-2xl font-bold mb-4 text-forest-green">TVDE - Vehicles</h3>
-          <p class="mb-4 text-lg">Professional vehicle services for transportation and delivery needs with reliable drivers.</p>
+        <div class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2">
+          <h3 class="text-2xl font-bold mb-4 text-forest-green" data-en="TVDE - Vehicles" data-pt="TVDE - Veículos">TVDE - Vehicles</h3>
+          <p class="mb-4 text-lg" data-en="Professional vehicle services for transportation and delivery needs with reliable drivers." data-pt="Serviços profissionais de veículos para necessidades de transporte e entrega com condutores confiáveis.">Professional vehicle services for transportation and delivery needs with reliable drivers.</p>
         </div>
-        <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
-          <h3 class="text-2xl font-bold mb-4 text-forest-green">Cutting</h3>
-          <p class="mb-4 text-lg">Specialized cutting services for various materials and applications with precision equipment.</p>
+        <div class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2">
+          <h3 class="text-2xl font-bold mb-4 text-forest-green" data-en="Cutting" data-pt="Corte">Cutting</h3>
+          <p class="mb-4 text-lg" data-en="Specialized cutting services for various materials and applications with precision equipment." data-pt="Serviços especializados de corte para vários materiais e aplicações com equipamento de precisão.">Specialized cutting services for various materials and applications with precision equipment.</p>
         </div>
-        <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
-          <h3 class="text-2xl font-bold mb-4 text-forest-green">Renting Business</h3>
-          <p class="mb-4 text-lg">Comprehensive rental solutions for equipment, tools, and resources to support your business needs.</p>
+        <div class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2">
+          <h3 class="text-2xl font-bold mb-4 text-forest-green" data-en="Renting Business" data-pt="Negócio de Aluguel">Renting Business</h3>
+          <p class="mb-4 text-lg" data-en="Comprehensive rental solutions for equipment, tools, and resources to support your business needs." data-pt="Soluções abrangentes de aluguel para equipamentos, ferramentas e recursos para apoiar as necessidades do seu negócio.">Comprehensive rental solutions for equipment, tools, and resources to support your business needs.</p>
         </div>
       </div>
     </div>
@@ -356,14 +367,14 @@
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="fade-in-up-animate">
-          <h2 class="text-4xl md:text-5xl font-bold mb-6">About Binomial Time Unip. Lda</h2>
-          <p class="text-xl mb-6">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6" data-en="About Binomial Time Unip. Lda" data-pt="Sobre Binomial Time Unip. Lda">About Binomial Time Unip. Lda</h2>
+          <p class="text-xl mb-6" data-en="Binomial Time Unip. Lda specializes in providing skilled teams for agricultural work, fruit picking, civil construction, gardening, and maintenance. Our mission is to support businesses and communities with reliable, efficient, and professional workforce solutions." data-pt="A Binomial Time Unip. Lda especializa-se em fornecer equipas qualificadas para trabalhos agrícolas, colheita de frutas, construção civil, jardinagem e manutenção. A nossa missão é apoiar empresas e comunidades com soluções de força de trabalho confiáveis, eficientes e profissionais.">
             Binomial Time Unip. Lda specializes in providing skilled teams for agricultural work, fruit picking, civil construction, gardening, and maintenance. Our mission is to support businesses and communities with reliable, efficient, and professional workforce solutions.
           </p>
           <ul class="list-disc pl-6 space-y-2 text-lg">
-            <li>Dedicated teams for every project</li>
-            <li>Expertise across agriculture, construction, and green spaces</li>
-            <li>Commitment to quality, safety, and client satisfaction</li>
+            <li data-en="Dedicated teams for every project" data-pt="Equipas dedicadas para cada projeto">Dedicated teams for every project</li>
+            <li data-en="Expertise across agriculture, construction, and green spaces" data-pt="Experiência em agricultura, construção e espaços verdes">Expertise across agriculture, construction, and green spaces</li>
+            <li data-en="Commitment to quality, safety, and client satisfaction" data-pt="Compromisso com qualidade, segurança e satisfação do cliente">Commitment to quality, safety, and client satisfaction</li>
           </ul>
         </div>
         <div class="fade-in-up-animate">
@@ -371,12 +382,12 @@
             <div class="card-box rounded-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300 fade-in-up-animate"
               style="background-color: #2D6A4F; color: #F7F5E6;">
               <div class="bg-warm-yellow rounded-xl p-6">
-                <h3 class="text-2xl font-bold text-forest-green mb-4">Our Mission</h3>
-                <p class="mb-2 text-lg text-forest-green">To deliver trusted workforce and project solutions for agriculture, construction, and green spaces, supporting our clients' growth and success.</p>
+                <h3 class="text-2xl font-bold text-forest-green mb-4" data-en="Our Mission" data-pt="Nossa Missão">Our Mission</h3>
+                <p class="mb-2 text-lg text-forest-green" data-en="To deliver trusted workforce and project solutions for agriculture, construction, and green spaces, supporting our clients' growth and success." data-pt="Entregar soluções confiáveis de força de trabalho e projetos para agricultura, construção e espaços verdes, apoiando o crescimento e sucesso dos nossos clientes.">To deliver trusted workforce and project solutions for agriculture, construction, and green spaces, supporting our clients' growth and success.</p>
                 <ul class="list-disc pl-6 text-forest-green">
-                  <li>Skilled labor for every season and project</li>
-                  <li>Reliable, safe, and efficient service</li>
-                  <li>Building lasting partnerships</li>
+                  <li data-en="Skilled labor for every season and project" data-pt="Mão de obra qualificada para cada estação e projeto">Skilled labor for every season and project</li>
+                  <li data-en="Reliable, safe, and efficient service" data-pt="Serviço confiável, seguro e eficiente">Reliable, safe, and efficient service</li>
+                  <li data-en="Building lasting partnerships" data-pt="Construindo parcerias duradouras">Building lasting partnerships</li>
                 </ul>
               </div>
             </div>
@@ -390,8 +401,8 @@
   <section id="contact" class="py-20 bg-[#E9E4D4] text-forest-green">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
-        <p class="text-xl max-w-4xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6" data-en="Get In Touch" data-pt="Entre em Contacto">Get In Touch</h2>
+        <p class="text-xl max-w-4xl mx-auto" data-en="Ready to transform your agricultural operations? Let's connect and explore how we can help you grow." data-pt="Pronto para transformar as suas operações agrícolas? Vamos conectar e explorar como podemos ajudá-lo a crescer.">
           Ready to transform your agricultural operations? Let's connect and explore how we can help you grow.
         </p>
       </div>
@@ -470,28 +481,28 @@
         </div>
         <!-- Contact Form -->
         <div class="card-box bg-white rounded-2xl p-8 fade-in-up-animate max-w-2xl w-full mx-auto col-span-2" style="color:#2D6A4F;">
-          <h3 class="text-2xl font-bold text-forest-green mb-6">Send us a message</h3>
+          <h3 class="text-2xl font-bold text-forest-green mb-6" data-en="Send us a message" data-pt="Envie-nos uma mensagem">Send us a message</h3>
           <form class="space-y-6" id="contactForm" novalidate>
             <div>
-              <label class="block text-forest-green font-medium mb-2" for="contactName">Name</label>
-              <input type="text" id="contactName" name="name" placeholder="Your Name" class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow">
+              <label class="block text-forest-green font-medium mb-2" for="contactName" data-en="Name" data-pt="Nome">Name</label>
+              <input type="text" id="contactName" name="name" data-en-placeholder="Your Name" data-pt-placeholder="Seu Nome" placeholder="Your Name" class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow">
               <div class="form-error" id="errorName" style="display:none;"></div>
             </div>
             <div>
-              <label class="block text-forest-green font-medium mb-2" for="contactEmail">Email</label>
-              <input type="email" id="contactEmail" name="email" placeholder="you@email.com" class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow">
+              <label class="block text-forest-green font-medium mb-2" for="contactEmail" data-en="Email" data-pt="Email">Email</label>
+              <input type="email" id="contactEmail" name="email" data-en-placeholder="you@email.com" data-pt-placeholder="voce@email.com" placeholder="you@email.com" class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow">
               <div class="form-error" id="errorEmail" style="display:none;"></div>
             </div>
             <div>
-              <label class="block text-forest-green font-medium mb-2" for="contactSubject">Subject</label>
-              <input type="text" id="contactSubject" name="subject" placeholder="Subject" class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow">
+              <label class="block text-forest-green font-medium mb-2" for="contactSubject" data-en="Subject" data-pt="Assunto">Subject</label>
+              <input type="text" id="contactSubject" name="subject" data-en-placeholder="Subject" data-pt-placeholder="Assunto" placeholder="Subject" class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow">
               <div class="form-error" id="errorSubject" style="display:none;"></div>
             </div>
             <div>
-              <label class="block text-forest-green font-medium mb-2" for="contactMessage">Message</label>
-              <textarea rows="4" id="contactMessage" name="message" placeholder="Your message..." class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow resize-none"></textarea>
+              <label class="block text-forest-green font-medium mb-2" for="contactMessage" data-en="Message" data-pt="Mensagem">Message</label>
+              <textarea rows="4" id="contactMessage" name="message" data-en-placeholder="Your message..." data-pt-placeholder="Sua mensagem..." placeholder="Your message..." class="w-full px-4 py-3 border border-light-beige rounded-lg focus:outline-none focus:border-warm-yellow resize-none"></textarea>
             </div>
-            <button type="submit" class="w-full btn-primary py-3 px-6 text-lg">
+            <button type="submit" class="w-full btn-primary py-3 px-6 text-lg" data-en="Send Message" data-pt="Enviar Mensagem">
               Send Message
             </button>
           </form>
@@ -511,43 +522,43 @@
               Binomial Time <span class="text-warm-yellow">Unip. Lda</span>
             </div>
           </div>
-          <p class="text-light-cream leading-relaxed">
+          <p class="text-light-cream leading-relaxed" data-en="Connecting agriculture with the future through talent and technology." data-pt="Conectando a agricultura com o futuro através de talento e tecnologia.">
             Connecting agriculture with the future through talent and technology.
           </p>
         </div>
 
         <div>
-          <h4 class="font-bold text-lg mb-4">Services</h4>
+          <h4 class="font-bold text-lg mb-4" data-en="Services" data-pt="Serviços">Services</h4>
           <ul class="space-y-2 text-light-cream/80">
-            <li><a href="#" class="hover:text-warm-yellow transition-colors">Agricultural Work</a></li>
-            <li><a href="#" class="hover:text-warm-yellow transition-colors">Fruit Picking</a></li>
-            <li><a href="#" class="hover:text-warm-yellow transition-colors">Civil Construction</a></li>
-            <li><a href="#" class="hover:text-warm-yellow transition-colors">Gardening</a></li>
-            <li><a href="#" class="hover:text-warm-yellow transition-colors">Maintenance</a></li>
+            <li><a href="#" class="hover:text-warm-yellow transition-colors" data-en="Cleaning Service" data-pt="Serviço de Limpeza">Cleaning Service</a></li>
+            <li><a href="#" class="hover:text-warm-yellow transition-colors" data-en="Gardening" data-pt="Jardinagem">Gardening</a></li>
+            <li><a href="#" class="hover:text-warm-yellow transition-colors" data-en="TVDE - Vehicles" data-pt="TVDE - Veículos">TVDE - Vehicles</a></li>
+            <li><a href="#" class="hover:text-warm-yellow transition-colors" data-en="Cutting" data-pt="Corte">Cutting</a></li>
+            <li><a href="#" class="hover:text-warm-yellow transition-colors" data-en="Renting Business" data-pt="Negócio de Aluguel">Renting Business</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="font-bold text-lg mb-4">Links</h4>
+          <h4 class="font-bold text-lg mb-4" data-en="Links" data-pt="Links">Links</h4>
           <ul class="space-y-2 text-light-cream/80">
-            <li><a href="#services" class="hover:text-warm-yellow transition-colors">Services</a></li>
-            <li><a href="#about" class="hover:text-warm-yellow transition-colors">About</a></li>
-            <li><a href="#contact" class="hover:text-warm-yellow transition-colors">Contact</a></li>
+            <li><a href="#services" class="hover:text-warm-yellow transition-colors" data-en="Services" data-pt="Serviços">Services</a></li>
+            <li><a href="#about" class="hover:text-warm-yellow transition-colors" data-en="About" data-pt="Sobre">About</a></li>
+            <li><a href="#contact" class="hover:text-warm-yellow transition-colors" data-en="Contact" data-pt="Contacto">Contact</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="font-bold text-lg mb-4">Legal</h4>
+          <h4 class="font-bold text-lg mb-4" data-en="Legal" data-pt="Legal">Legal</h4>
           <ul class="space-y-2 text-light-cream/80">
-            <li><a href="#" class="hover:text-warm-yellow transition-colors">Privacy Policy</a></li>
-            <li><a href="#" class="hover:text-warm-yellow transition-colors">Terms of Service</a></li>
-            <li><a href="#" class="hover:text-warm-yellow transition-colors">Cookie Policy</a></li>
+            <li><a href="#" class="hover:text-warm-yellow transition-colors" data-en="Privacy Policy" data-pt="Política de Privacidade">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-warm-yellow transition-colors" data-en="Terms of Service" data-pt="Termos de Serviço">Terms of Service</a></li>
+            <li><a href="#" class="hover:text-warm-yellow transition-colors" data-en="Cookie Policy" data-pt="Política de Cookies">Cookie Policy</a></li>
           </ul>
         </div>
       </div>
 
       <div class="border-t border-light-cream/30 mt-8 pt-8 text-center text-light-cream/80">
-        <p>&copy; 2025 Binomial Time Unip. Lda. All rights reserved.</p>
+        <p data-en="&copy; 2025 Binomial Time Unip. Lda. All rights reserved." data-pt="&copy; 2025 Binomial Time Unip. Lda. Todos os direitos reservados.">&copy; 2025 Binomial Time Unip. Lda. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -715,6 +726,54 @@
 
       // Start the carousel
       setInterval(nextSlide, slideInterval);
+    });
+
+    // Language Switcher Functionality
+    document.addEventListener("DOMContentLoaded", function () {
+      const enLang = document.getElementById('enLang');
+      const ptLang = document.getElementById('ptLang');
+      
+      // Get saved language from localStorage or default to English
+      let currentLanguage = localStorage.getItem('selectedLanguage') || 'en';
+      
+      // Initialize language
+      changeLanguage(currentLanguage);
+      
+      // Language option clicks
+      document.querySelectorAll('.language-option').forEach(option => {
+        option.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const lang = this.getAttribute('data-lang');
+          changeLanguage(lang);
+        });
+      });
+      
+      function changeLanguage(lang) {
+        currentLanguage = lang;
+        localStorage.setItem('selectedLanguage', lang);
+        
+        // Update bold styling
+        enLang.classList.toggle('font-bold', lang === 'en');
+        enLang.classList.toggle('text-darker-yellow', lang === 'en');
+        ptLang.classList.toggle('font-bold', lang === 'pt');
+        ptLang.classList.toggle('text-darker-yellow', lang === 'pt');
+        
+        // Update all elements with data attributes
+        document.querySelectorAll('[data-' + lang + ']').forEach(element => {
+          const text = element.getAttribute('data-' + lang);
+          if (text) {
+            element.textContent = text;
+          }
+        });
+        
+        // Update placeholders
+        document.querySelectorAll('[data-' + lang + '-placeholder]').forEach(element => {
+          const placeholder = element.getAttribute('data-' + lang + '-placeholder');
+          if (placeholder) {
+            element.placeholder = placeholder;
+          }
+        });
+      }
     });
   </script>
   <script>
