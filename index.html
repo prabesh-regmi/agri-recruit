@@ -5,6 +5,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Binomial Time Unip. Lda - Connecting Agriculture</title>
+  
+  <!-- Favicon and Web Icons -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/logo.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo.png" />
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Binomial Time Unip. Lda provides professional workforce solutions for cleaning services, gardening, TVDE vehicles, cutting services, and business rentals. Empowering growth across agriculture, construction, and green spaces with reliable, skilled teams." />
+  <meta name="keywords" content="cleaning service, gardening, TVDE vehicles, cutting services, business rentals, workforce solutions, agriculture, construction, maintenance, professional teams" />
+  <meta name="author" content="Binomial Time Unip. Lda" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph Meta Tags for Social Media Sharing -->
+  <meta property="og:title" content="Binomial Time Unip. Lda - Professional Workforce Solutions" />
+  <meta property="og:description" content="Professional workforce solutions for cleaning services, gardening, TVDE vehicles, cutting services, and business rentals. Empowering growth across agriculture, construction, and green spaces." />
+  <meta property="og:image" content="assets/images/hero-bg-1.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="Binomial Time Unip. Lda" />
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Binomial Time Unip. Lda - Professional Workforce Solutions" />
+  <meta name="twitter:description" content="Professional workforce solutions for cleaning services, gardening, TVDE vehicles, cutting services, and business rentals." />
+  <meta name="twitter:image" content="assets/images/hero-bg-1.jpg" />
+  
+  <!-- Additional SEO Meta Tags -->
+  <meta name="theme-color" content="#2D6A4F" />
+  <meta name="msapplication-TileColor" content="#2D6A4F" />
+  <link rel="canonical" href="" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -177,19 +210,7 @@
       color: #F2C94C;
     }
 
-    .hero-bg-section {
-      background-image: url('assets/images/hero-bg.jpg');
-      /* Replace with your image path */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      position: relative;
-    }
 
-    .hero-bg-section>.relative {
-      position: relative;
-      z-index: 1;
-    }
     .form-error {
       color: #d32f2f;
       font-size: 0.95rem;
@@ -233,9 +254,17 @@
   </nav>
 
   <!-- Hero Section -->
-  <section
-    class="min-h-screen relative flex items-center justify-center px-4 pt-20 bg-[#F7F5E6] text-white hero-bg-section">
-    <div class="absolute inset-0 bg-black bg-opacity-30 pointer-events-none z-0"></div>
+  <section class="min-h-screen relative flex items-center justify-center px-4 pt-20 bg-[#F7F5E6] text-white overflow-hidden">
+    <!-- Image Carousel -->
+    <div class="absolute inset-0 z-0">
+      <div class="carousel-container relative w-full h-full">
+        <div class="carousel-slide active" style="background-image: url('assets/images/hero-bg-1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 1; transition: opacity 1s ease-in-out;"></div>
+        <div class="carousel-slide" style="background-image: url('assets/images/hero-bg-2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1s ease-in-out;"></div>
+        <div class="carousel-slide" style="background-image: url('assets/images/hero-bg-3.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1s ease-in-out;"></div>
+      </div>
+    </div>
+    
+    <div class="absolute inset-0 bg-black bg-opacity-40 pointer-events-none z-0"></div>
 
     <!-- Hero Content -->
     <div class="relative z-10 text-center max-w-4xl mx-auto">
@@ -299,24 +328,24 @@
       </div>
       <div class="grid md:grid-cols-5 gap-8">
         <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
-          <h3 class="text-2xl font-bold mb-4 text-forest-green">Agricultural Work</h3>
-          <p class="mb-4 text-lg">Professional teams for planting, harvesting, and field management to maximize your yield.</p>
-        </div>
-        <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
-          <h3 class="text-2xl font-bold mb-4 text-forest-green">Fruit Picking</h3>
-          <p class="mb-4 text-lg">Skilled pickers for efficient and careful fruit harvesting, ensuring quality and speed.</p>
-        </div>
-        <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
-          <h3 class="text-2xl font-bold mb-4 text-forest-green">Civil Construction</h3>
-          <p class="mb-4 text-lg">Reliable labor for construction projects, site preparation, and infrastructure support.</p>
+          <h3 class="text-2xl font-bold mb-4 text-forest-green">Cleaning Service</h3>
+          <p class="mb-4 text-lg">Professional cleaning teams for residential, commercial, and industrial spaces with attention to detail.</p>
         </div>
         <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
           <h3 class="text-2xl font-bold mb-4 text-forest-green">Gardening</h3>
           <p class="mb-4 text-lg">Expert gardening teams for landscaping, maintenance, and beautification of green spaces.</p>
         </div>
         <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
-          <h3 class="text-2xl font-bold mb-4 text-forest-green">Maintenance</h3>
-          <p class="mb-4 text-lg">Comprehensive maintenance services for farms, facilities, and outdoor environments.</p>
+          <h3 class="text-2xl font-bold mb-4 text-forest-green">TVDE - Vehicles</h3>
+          <p class="mb-4 text-lg">Professional vehicle services for transportation and delivery needs with reliable drivers.</p>
+        </div>
+        <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
+          <h3 class="text-2xl font-bold mb-4 text-forest-green">Cutting</h3>
+          <p class="mb-4 text-lg">Specialized cutting services for various materials and applications with precision equipment.</p>
+        </div>
+        <div class="card-box bg-white rounded-2xl p-8 shadow-lg fade-in-up-animate hover:-translate-y-2">
+          <h3 class="text-2xl font-bold mb-4 text-forest-green">Renting Business</h3>
+          <p class="mb-4 text-lg">Comprehensive rental solutions for equipment, tools, and resources to support your business needs.</p>
         </div>
       </div>
     </div>
@@ -670,6 +699,22 @@
         });
       }, { threshold: 0.2 });
       animatedEls.forEach(el => observer.observe(el));
+    });
+
+    // Hero Image Carousel
+    document.addEventListener("DOMContentLoaded", function () {
+      const slides = document.querySelectorAll('.carousel-slide');
+      let currentSlide = 0;
+      const slideInterval = 5000; // Change slide every 5 seconds
+
+      function nextSlide() {
+        slides[currentSlide].style.opacity = '0';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].style.opacity = '1';
+      }
+
+      // Start the carousel
+      setInterval(nextSlide, slideInterval);
     });
   </script>
   <script>
