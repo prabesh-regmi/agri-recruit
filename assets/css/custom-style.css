@@ -1,0 +1,226 @@
+.nav-transition {
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.floating-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-animation:nth-child(2) {
+    animation-delay: -2s;
+}
+
+.floating-animation:nth-child(3) {
+    animation-delay: -4s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    33% {
+        transform: translateY(-20px) rotate(2deg);
+    }
+
+    66% {
+        transform: translateY(-10px) rotate(-1deg);
+    }
+}
+
+.pulse-animation {
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}
+
+.grow-animation {
+    animation: grow 8s ease-in-out infinite;
+}
+
+@keyframes grow {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out;
+}
+
+.fade-in-up-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1),
+        transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    /* Will be set inline for staggered delay */
+}
+
+.fade-in-up-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #f7f5e6;
+    color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: #f2c94c;
+    color: #2d6a4f;
+    font-weight: bold;
+    border-radius: 9999px;
+    box-shadow: 0 2px 8px 0 rgba(44, 106, 79, 0.08);
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #d4ac2b;
+    color: #fff;
+}
+
+.card-box {
+    background-color: #e9e4d4;
+    color: #2d6a4f;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px 0 rgba(44, 106, 79, 0.06);
+}
+
+.header-footer {
+    background-color: #2d6a4f;
+    color: #f7f5e6;
+}
+
+.header-footer .text-white,
+.header-footer .text-light-cream {
+    color: #f7f5e6 !important;
+}
+
+.header-footer .logo-text {
+    color: #fff;
+}
+
+.header-footer a {
+    color: #f7f5e6;
+    transition: color 0.2s;
+}
+
+.header-footer a:hover {
+    color: #f2c94c;
+}
+
+.form-error {
+    color: #d32f2f;
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+    font-weight: 600;
+}
+
+/* Responsive Ireland (island) section width and padding */
+@media (max-width: 768px) {
+    .island-section {
+        width: 90% !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+}
+
+#mobileNavList {
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.3s;
+}
+
+#mobileNavList.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#mobile-nav-toggle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    z-index: 60;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#mobile-nav-toggle .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+}
+
+#mobile-nav-toggle.open .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+#mobile-nav-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#mobile-nav-toggle.open .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+    #mobile-nav-toggle {
+        display: none !important;
+    }
+}
