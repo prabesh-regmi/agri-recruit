@@ -795,7 +795,9 @@
             >
               Send us a message
             </h3>
-            <form class="space-y-6" id="contactForm" novalidate>
+            <form class="space-y-6" id="form" method="POST" action="https://api.web3forms.com/submit" novalidate>
+              <input type="hidden" name="access_key" value="7d47e672-a8fb-41f5-8cd3-fa596cb90bce" />
+              <input type="hidden" name="recaptcha_response" id="recaptchaResponse" />
               <div>
                 <label
                   class="block text-forest-green font-medium mb-2"
@@ -892,6 +894,7 @@
                 Send Message
               </button>
             </form>
+            <div id="result" class="mt-4 text-center text-gray-500"></div>
           </div>
         </div>
       </div>
@@ -1328,19 +1331,20 @@
         }
       });
     </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdyhYgrAAAAAMBWHqxyviUYsQBvXYgJ-AZOokDa"></script>
     <script>
-      // Contact form validation
+      // Contact form validation and Web3Forms submission with reCAPTCHA v3
       document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("contactForm");
+        const form = document.getElementById("form");
+        const result = document.getElementById("result");
         if (!form) return;
         form.addEventListener("submit", function (e) {
+          e.preventDefault();
           let hasError = false;
-          // Clear previous errors
           ["errorName", "errorEmail", "errorSubject"].forEach((id) => {
             document.getElementById(id).style.display = "none";
             document.getElementById(id).textContent = "";
           });
-          // Name
           const name = form.name.value.trim();
           if (!name) {
             document.getElementById("errorName").textContent =
@@ -1348,7 +1352,6 @@
             document.getElementById("errorName").style.display = "block";
             hasError = true;
           }
-          // Email
           const email = form.email.value.trim();
           if (!email) {
             document.getElementById("errorEmail").textContent =
@@ -1361,7 +1364,6 @@
             document.getElementById("errorEmail").style.display = "block";
             hasError = true;
           }
-          // Subject
           const subject = form.subject.value.trim();
           if (!subject) {
             document.getElementById("errorSubject").textContent =
@@ -1370,8 +1372,52 @@
             hasError = true;
           }
           if (hasError) {
-            e.preventDefault();
+            return;
           }
+          result.style.display = "block";
+          result.innerHTML = "Please wait...";
+          grecaptcha.ready(function () {
+            grecaptcha.execute('6LdyhYgrAAAAAMBWHqxyviUYsQBvXYgJ-AZOokDa', {action: 'submit'}).then(function(token) {
+              document.getElementById('recaptchaResponse').value = token;
+              const formData = new FormData(form);
+              const object = Object.fromEntries(formData);
+              const json = JSON.stringify(object);
+              fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  Accept: "application/json",
+                },
+                body: json,
+              })
+                .then(async (response) => {
+                  let json = await response.json();
+                  if (response.status == 200) {
+                    result.innerHTML = json.message;
+                    result.classList.remove("text-gray-500");
+                    result.classList.remove("text-red-500");
+                    result.classList.add("text-green-500");
+                  } else {
+                    result.innerHTML = json.message;
+                    result.classList.remove("text-gray-500");
+                    result.classList.remove("text-green-500");
+                    result.classList.add("text-red-500");
+                  }
+                })
+                .catch((error) => {
+                  result.innerHTML = "Something went wrong!";
+                  result.classList.remove("text-gray-500");
+                  result.classList.remove("text-green-500");
+                  result.classList.add("text-red-500");
+                })
+                .then(function () {
+                  form.reset();
+                  setTimeout(() => {
+                    result.style.display = "none";
+                  }, 5000);
+                });
+            });
+          });
         });
       });
     </script>
