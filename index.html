@@ -971,11 +971,14 @@
               <button
                 type="submit"
                 id="submitBtn"
-                class="w-full btn-primary py-3 px-6 text-lg flex items-center justify-center gap-2"
-                data-en="Send Message"
-                data-pt="Enviar Mensagem"
+                class="w-full btn-primary py-3 px-6 text-lg flex items-center justify-center gap-2 cursor-pointer"
               >
-                <span id="submitBtnText">Send Message</span>
+                <span
+                  id="submitBtnText"
+                  data-en="Send Message"
+                  data-pt="Enviar Mensagem"
+                  >Send Message</span
+                >
                 <svg
                   id="submitSpinner"
                   class="animate-spin h-5 w-5 text-white hidden"
@@ -999,7 +1002,10 @@
                 </svg>
               </button>
             </form>
-            <div id="result" class="mt-4 text-center text-gray-500"></div>
+            <div
+              id="result"
+              class="mt-4 text-center text-gray-500 rounded"
+            ></div>
           </div>
         </div>
       </div>
@@ -1453,9 +1459,21 @@
             "text-green-500",
             "text-red-500"
           );
-          result.classList.add(isSuccess ? "text-green-500" : "text-red-500");
+          result.classList.add(
+            isSuccess ? "text-green-500" : "text-red-500",
+            isSuccess ? "bg-green-50" : "bg-red-50",
+            "py-1.5",
+            "px-3"
+          );
           document.getElementById("closeResult").onclick = function () {
             result.innerHTML = "";
+            result.classList.remove(
+              "py-1.5",
+              "px-3",
+              "bg-red-50",
+              "bg-green-50",
+              "rounded"
+            );
           };
         }
         form.addEventListener("submit", function (e) {
