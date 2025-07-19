@@ -213,7 +213,7 @@
           <div
             class="carousel-slide active"
             style="
-              background-image: url('assets/images/hero-bg-1.jpg');
+              background-image: url('assets/images/hero-bg-1.jpeg');
               background-size: cover;
               background-position: center;
               background-repeat: no-repeat;
@@ -229,7 +229,7 @@
           <div
             class="carousel-slide"
             style="
-              background-image: url('assets/images/hero-bg-2.jpg');
+              background-image: url('assets/images/hero-bg-2.jpeg');
               background-size: cover;
               background-position: center;
               background-repeat: no-repeat;
@@ -245,7 +245,23 @@
           <div
             class="carousel-slide"
             style="
-              background-image: url('assets/images/hero-bg-4.jpg');
+              background-image: url('assets/images/hero-bg-3.jpeg');
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+              transition: opacity 1s ease-in-out;
+            "
+          ></div>
+          <div
+            class="carousel-slide"
+            style="
+              background-image: url('assets/images/hero-bg-4.jpeg');
               background-size: cover;
               background-position: center;
               background-repeat: no-repeat;
@@ -387,117 +403,32 @@
     <section id="services" class="py-20 bg-light-beige text-forest-green">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
-          <h2
-            class="text-4xl md:text-5xl font-bold mb-6"
-            data-en="Our Services"
-            data-pt="Nossos Serviços"
-          >
-            Our Services
-          </h2>
-          <p
-            class="text-xl max-w-3xl mx-auto"
-            data-en="Comprehensive workforce and project solutions for agriculture, construction, and green spaces."
-            data-pt="Soluções abrangentes de força de trabalho e projetos para agricultura, construção e espaços verdes."
-          >
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">Our Services</h2>
+          <p class="text-xl max-w-3xl mx-auto">
             Comprehensive workforce and project solutions for agriculture,
             construction, and green spaces.
           </p>
         </div>
         <div class="grid md:grid-cols-5 gap-4">
-          <div
-            class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2"
-          >
-            <h3
-              class="text-2xl font-bold mb-4 text-forest-green"
-              data-en="Cleaning Service"
-              data-pt="Serviço de Limpeza"
-            >
-              Cleaning Service
-            </h3>
-            <p
-              class="mb-4 text-lg"
-              data-en="Professional cleaning teams for residential, commercial, and industrial spaces with attention to detail."
-              data-pt="Equipas profissionais de limpeza para espaços residenciais, comerciais e industriais com atenção aos detalhes."
-            >
-              Professional cleaning teams for residential, commercial, and
-              industrial spaces with attention to detail.
-            </p>
+          <div class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2">
+            <h3 class="text-xl font-bold mb-4 text-forest-green" data-en="Fruit Picking" data-pt="Colheita de Frutas">Fruit Picking</h3>
+            <p class="mb-4 text-lg" data-en="Harvesting fruits and vegetables in farms and agricultural fields." data-pt="Colheita de frutas e vegetais em fazendas e campos agrícolas.">Harvesting fruits and vegetables in farms and agricultural fields.</p>
           </div>
-          <div
-            class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2"
-          >
-            <h3
-              class="text-2xl font-bold mb-4 text-forest-green"
-              data-en="Gardening"
-              data-pt="Jardinagem"
-            >
-              Gardening
-            </h3>
-            <p
-              class="mb-4 text-lg"
-              data-en="Expert gardening teams for landscaping, maintenance, and beautification of green spaces."
-              data-pt="Equipas especializadas em jardinagem para paisagismo, manutenção e embelezamento de espaços verdes."
-            >
-              Expert gardening teams for landscaping, maintenance, and
-              beautification of green spaces.
-            </p>
+          <div class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2">
+            <h3 class="text-xl font-bold mb-4 text-forest-green" data-en="Construction" data-pt="Construção">Construction</h3>
+            <p class="mb-4 text-lg" data-en="Support for building sites, renovations, and general construction work." data-pt="Apoio em canteiros de obras, reformas e trabalhos gerais de construção.">Support for building sites, renovations, and general construction work.</p>
           </div>
-          <div
-            class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2"
-          >
-            <h3
-              class="text-2xl font-bold mb-4 text-forest-green"
-              data-en="TVDE - Vehicles"
-              data-pt="TVDE - Veículos"
-            >
-              TVDE - Vehicles
-            </h3>
-            <p
-              class="mb-4 text-lg"
-              data-en="Professional vehicle services for transportation and delivery needs with reliable drivers."
-              data-pt="Serviços profissionais de veículos para necessidades de transporte e entrega com condutores confiáveis."
-            >
-              Professional vehicle services for transportation and delivery
-              needs with reliable drivers.
-            </p>
+          <div class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2">
+            <h3 class="text-xl font-bold mb-4 text-forest-green" data-en="Cleaning (Homes & Hotels)" data-pt="Limpeza (Casas & Hotéis)">Cleaning (Homes & Hotels)</h3>
+            <p class="mb-4 text-lg" data-en="Housekeeping and cleaning services for residential and hospitality sectors." data-pt="Serviços de limpeza e arrumação para residências e setor de hotelaria.">Housekeeping and cleaning services for residential and hospitality sectors.</p>
           </div>
-          <div
-            class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2"
-          >
-            <h3
-              class="text-2xl font-bold mb-4 text-forest-green"
-              data-en="Cutting"
-              data-pt="Corte"
-            >
-              Cutting
-            </h3>
-            <p
-              class="mb-4 text-lg"
-              data-en="Specialized cutting services for various materials and applications with precision equipment."
-              data-pt="Serviços especializados de corte para vários materiais e aplicações com equipamento de precisão."
-            >
-              Specialized cutting services for various materials and
-              applications with precision equipment.
-            </p>
+          <div class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2">
+            <h3 class="text-xl font-bold mb-4 text-forest-green" data-en="Gardening" data-pt="Jardinagem">Gardening</h3>
+            <p class="mb-4 text-lg" data-en="Maintenance and care of private and public green spaces." data-pt="Manutenção e cuidado de espaços verdes privados e públicos.">Maintenance and care of private and public green spaces.</p>
           </div>
-          <div
-            class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2"
-          >
-            <h3
-              class="text-2xl font-bold mb-4 text-forest-green"
-              data-en="Renting Business"
-              data-pt="Negócio de Aluguel"
-            >
-              Renting Business
-            </h3>
-            <p
-              class="mb-4 text-lg"
-              data-en="Comprehensive rental solutions for equipment, tools, and resources to support your business needs."
-              data-pt="Soluções abrangentes de aluguel para equipamentos, ferramentas e recursos para apoiar as necessidades do seu negócio."
-            >
-              Comprehensive rental solutions for equipment, tools, and resources
-              to support your business needs.
-            </p>
+          <div class="card-box bg-white rounded-2xl p-4 shadow-lg fade-in-up-animate hover:-translate-y-2">
+            <h3 class="text-xl font-bold mb-4 text-forest-green" data-en="TVDE Vehicle Services" data-pt="Serviços de Veículos TVDE">TVDE Vehicle Services</h3>
+            <p class="mb-4 text-lg" data-en="Drivers for passenger transport using TVDE-licensed vehicles." data-pt="Motoristas para transporte de passageiros com veículos licenciados TVDE.">Drivers for passenger transport using TVDE-licensed vehicles.</p>
           </div>
         </div>
       </div>
@@ -506,102 +437,44 @@
     <!-- About Section -->
     <section id="about" class="py-20 bg-white text-forest-green">
       <div class="container mx-auto px-4">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="text-left mb-12 fade-in-up-animate">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6" data-en="About Us" data-pt="Sobre Nós">About Us</h2>
+          <p class="text-xl mb-6 max-w-5xl" data-en="Binomial Times is a company with 5 years of experience, officially established on January 3, 2020. Headquartered in Silves, Portugal, the company has a share capital of €500.00. Its main business activity is in the construction of buildings, with active involvement in various essential and manual labor services." data-pt="A Binomial Times é uma empresa com 5 anos de experiência, oficialmente estabelecida em 3 de janeiro de 2020. Sediada em Silves, Portugal, a empresa possui um capital social de €500,00. Sua principal atividade é a construção de edifícios, com atuação em diversos serviços essenciais e de mão de obra manual.">
+            Binomial Times is a company with 5 years of experience, officially
+            established on January 3, 2020. Headquartered in Silves, Portugal,
+            the company has a share capital of €500.00. Its main business
+            activity is in the construction of buildings, with active
+            involvement in various essential and manual labor services.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
           <div class="fade-in-up-animate">
-            <h2
-              class="text-4xl md:text-5xl font-bold mb-6"
-              data-en="About Binomial Time Unip. Lda"
-              data-pt="Sobre Binomial Time Unip. Lda"
-            >
-              About Binomial Time Unip. Lda
-            </h2>
-            <p
-              class="text-xl mb-6"
-              data-en="Founded in 2020 and headquartered in Silves, Binomial Time Unip. Lda has been building a reputation for excellence in the construction industry for over 5 years. With a share capital of €500.00, our company specializes in building construction, delivering reliable and high-quality solutions for every project. We are committed to supporting our clients with expertise, dedication, and a deep understanding of the local market."
-              data-pt="Fundada em 2020 e sediada em Silves, a Binomial Time Unip. Lda constrói uma reputação de excelência no setor da construção há mais de 5 anos. Com um capital social de €500,00, a nossa empresa é especializada em construção de edifícios, oferecendo soluções fiáveis e de alta qualidade para cada projeto. Comprometemo-nos a apoiar os nossos clientes com experiência, dedicação e um profundo conhecimento do mercado local."
-            >
-              Founded in 2020 and headquartered in Silves, Binomial Time Unip.
-              Lda has been building a reputation for excellence in the
-              construction industry for over 5 years. With a share capital of
-              €500.00, our company specializes in building construction,
-              delivering reliable and high-quality solutions for every project.
-              We are committed to supporting our clients with expertise,
-              dedication, and a deep understanding of the local market.
+            <p class="text-lg mb-4" data-en="We specialize in providing skilled and dedicated workers for hands-on tasks in the following areas:" data-pt="Somos especializados em fornecer trabalhadores qualificados e dedicados para tarefas práticas nas seguintes áreas:">
+              We specialize in providing skilled and dedicated workers for hands-on tasks in the following areas:
             </p>
             <ul class="list-disc pl-6 space-y-2 text-lg">
-              <li
-                data-en="5 years of experience in building construction"
-                data-pt="5 anos de experiência em construção de edifícios"
-              >
-                5 years of experience in building construction
-              </li>
-              <li
-                data-en="Headquartered in Silves, serving the region with pride"
-                data-pt="Sede em Silves, servindo a região com orgulho"
-              >
-                Headquartered in Silves, serving the region with pride
-              </li>
-              <li
-                data-en="Registered share capital: €500.00"
-                data-pt="Capital social registado: €500,00"
-              >
-                Registered share capital: €500.00
-              </li>
-              <li
-                data-en="Dedicated to quality, safety, and client satisfaction"
-                data-pt="Dedicados à qualidade, segurança e satisfação do cliente"
-              >
-                Dedicated to quality, safety, and client satisfaction
-              </li>
+              <li data-en="Fruit Picking – Harvesting fruits and vegetables in farms and agricultural fields." data-pt="Colheita de Frutas – Colheita de frutas e vegetais em fazendas e campos agrícolas."><b data-en="Fruit Picking" data-pt="Colheita de Frutas">Fruit Picking</b> – Harvesting fruits and vegetables in farms and agricultural fields.</li>
+              <li data-en="Construction – Support for building sites, renovations, and general construction work." data-pt="Construção – Apoio em canteiros de obras, reformas e trabalhos gerais de construção."><b data-en="Construction" data-pt="Construção">Construction</b> – Support for building sites, renovations, and general construction work.</li>
+              <li data-en="Cleaning (Homes & Hotels) – Housekeeping and cleaning services for residential and hospitality sectors." data-pt="Limpeza (Casas & Hotéis) – Serviços de limpeza e arrumação para residências e setor de hotelaria."><b data-en="Cleaning (Homes & Hotels)" data-pt="Limpeza (Casas & Hotéis)">Cleaning (Homes & Hotels)</b> – Housekeeping and cleaning services for residential and hospitality sectors.</li>
+              <li data-en="Gardening – Maintenance and care of private and public green spaces." data-pt="Jardinagem – Manutenção e cuidado de espaços verdes privados e públicos."><b data-en="Gardening" data-pt="Jardinagem">Gardening</b> – Maintenance and care of private and public green spaces.</li>
+              <li data-en="TVDE Vehicle Services – Drivers for passenger transport using TVDE-licensed vehicles." data-pt="Serviços de Veículos TVDE – Motoristas para transporte de passageiros com veículos licenciados TVDE."><b data-en="TVDE Vehicle Services" data-pt="Serviços de Veículos TVDE">TVDE Vehicle Services</b> – Drivers for passenger transport using TVDE-licensed vehicles.</li>
             </ul>
           </div>
-          <div class="fade-in-up-animate">
-            <div class="relative">
-              <div
-                class="card-box rounded-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300 fade-in-up-animate"
-                style="background-color: #2d6a4f; color: #f7f5e6"
-              >
-                <div class="bg-warm-yellow rounded-xl p-6">
-                  <h3
-                    class="text-2xl font-bold text-forest-green mb-4"
-                    data-en="Our Mission"
-                    data-pt="Nossa Missão"
-                  >
-                    Our Mission
-                  </h3>
-                  <p
-                    class="mb-2 text-lg text-forest-green"
-                    data-en="To deliver trusted building construction solutions, supporting our clients' growth and success with professionalism and local expertise."
-                    data-pt="Entregar soluções confiáveis de construção de edifícios, apoiando o crescimento e sucesso dos nossos clientes com profissionalismo e conhecimento local."
-                  >
-                    To deliver trusted building construction solutions,
-                    supporting our clients' growth and success with
-                    professionalism and local expertise.
-                  </p>
-                  <ul class="list-disc pl-6 text-forest-green">
-                    <li
-                      data-en="Skilled teams for every project"
-                      data-pt="Equipas qualificadas para cada projeto"
-                    >
-                      Skilled teams for every project
-                    </li>
-                    <li
-                      data-en="Reliable, safe, and efficient service"
-                      data-pt="Serviço confiável, seguro e eficiente"
-                    >
-                      Reliable, safe, and efficient service
-                    </li>
-                    <li
-                      data-en="Building lasting partnerships"
-                      data-pt="Construindo parcerias duradouras"
-                    >
-                      Building lasting partnerships
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+          <div class="fade-in-up-animate flex justify-center">
+            <img
+              src="assets/images/ceo.png"
+              alt="CEO"
+              class="rounded-2xl max-w-[270px] w-full h-auto object-cover"
+            />
           </div>
+        </div>
+        <div class="fade-in-up-animate">
+          <p class="text-lg mt-6 max-w-5xl" data-en="At Binomial Times, we take pride in delivering consistent, hands-on labor solutions that support some of the most important sectors in Portugal. Our team is built on reliability, efficiency, and a deep respect for the value of honest work." data-pt="Na Binomial Times, temos orgulho em oferecer soluções de trabalho prático e consistente que apoiam alguns dos setores mais importantes de Portugal. Nossa equipe é formada por confiabilidade, eficiência e profundo respeito pelo valor do trabalho honesto.">
+            At Binomial Times, we take pride in delivering consistent, hands-on
+            labor solutions that support some of the most important sectors in
+            Portugal. Our team is built on reliability, efficiency, and a deep
+            respect for the value of honest work.
+          </p>
         </div>
       </div>
     </section>
@@ -1452,7 +1325,30 @@
         const submitBtn = document.getElementById("submitBtn");
         const submitBtnText = document.getElementById("submitBtnText");
         const submitSpinner = document.getElementById("submitSpinner");
-        if (!form) return;
+        // Language messages
+        const messages = {
+          en: {
+            nameRequired: "Name is required.",
+            emailRequired: "Email is required.",
+            emailInvalid: "Please enter a valid email address.",
+            subjectRequired: "Subject is required.",
+            success: "Your message has been sent successfully!",
+            error: "Something went wrong! Try again.",
+            recaptcha: "reCAPTCHA error. Please try again."
+          },
+          pt: {
+            nameRequired: "Nome é obrigatório.",
+            emailRequired: "Email é obrigatório.",
+            emailInvalid: "Por favor, insira um endereço de email válido.",
+            subjectRequired: "Assunto é obrigatório.",
+            success: "Sua mensagem foi enviada com sucesso!",
+            error: "Algo deu errado! Tente novamente.",
+            recaptcha: "Erro no reCAPTCHA. Por favor, tente novamente."
+          }
+        };
+        function getCurrentLang() {
+          return localStorage.getItem("selectedLanguage") || "en";
+        }
         function showResult(message, isSuccess) {
           result.innerHTML = `<span>${message}</span> <button id='closeResult' class='ml-2 text-sm text-blue-700 underline bg-transparent border-0 cursor-pointer' style='background:none;border:none;' aria-label='Close'>&times;</button>`;
           result.classList.remove(
@@ -1477,6 +1373,7 @@
             );
           };
         }
+        if (!form) return;
         form.addEventListener("submit", function (e) {
           e.preventDefault();
           let hasError = false;
@@ -1484,29 +1381,26 @@
             document.getElementById(id).style.display = "none";
             document.getElementById(id).textContent = "";
           });
+          const lang = getCurrentLang();
           const name = form.name.value.trim();
           if (!name) {
-            document.getElementById("errorName").textContent =
-              "Name is required.";
+            document.getElementById("errorName").textContent = messages[lang].nameRequired;
             document.getElementById("errorName").style.display = "block";
             hasError = true;
           }
           const email = form.email.value.trim();
           if (!email) {
-            document.getElementById("errorEmail").textContent =
-              "Email is required.";
+            document.getElementById("errorEmail").textContent = messages[lang].emailRequired;
             document.getElementById("errorEmail").style.display = "block";
             hasError = true;
           } else if (!/^\S+@\S+\.\S+$/.test(email)) {
-            document.getElementById("errorEmail").textContent =
-              "Please enter a valid email address.";
+            document.getElementById("errorEmail").textContent = messages[lang].emailInvalid;
             document.getElementById("errorEmail").style.display = "block";
             hasError = true;
           }
           const subject = form.subject.value.trim();
           if (!subject) {
-            document.getElementById("errorSubject").textContent =
-              "Subject is required.";
+            document.getElementById("errorSubject").textContent = messages[lang].subjectRequired;
             document.getElementById("errorSubject").style.display = "block";
             hasError = true;
           }
@@ -1530,27 +1424,27 @@
                   email: form.email.value.trim(),
                   subject: form.subject.value.trim(),
                   message: form.message.value.trim(),
-                  token: token
+                  token: token,
                 };
                 fetch("https://contact.binomialtime.com", {
                   method: "POST",
                   headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
                   },
-                  body: JSON.stringify(payload)
+                  body: JSON.stringify(payload),
                 })
                   .then(async (response) => {
                     let data = await response.json();
                     if (response.ok && data.status === "success") {
-                      showResult("Your message has been sent successfully!", true);
+                      showResult(messages[lang].success, true);
                     } else if (data && data.error) {
                       showResult(data.error, false);
                     } else {
-                      showResult("Something went wrong! Try again.", false);
+                      showResult(messages[lang].error, false);
                     }
                   })
                   .catch(() => {
-                    showResult("Something went wrong!", false);
+                    showResult(messages[lang].error, false);
                   })
                   .finally(() => {
                     submitBtn.disabled = false;
@@ -1560,7 +1454,7 @@
                   });
               })
               .catch(() => {
-                showResult("reCAPTCHA error. Please try again.", false);
+                showResult(messages[lang].recaptcha, false);
                 submitBtn.disabled = false;
                 submitSpinner.classList.add("hidden");
                 submitBtnText.classList.remove("opacity-50");
