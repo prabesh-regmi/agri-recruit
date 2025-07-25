@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build:css": "tailwindcss -i ./assets/css/custom-style.css -o ./assets/css/custom-style.build.css --minify"
+    "build:css": "tailwindcss -i ./assets/css/custom-style.css -o ./assets/css/custom-style.build.css --minify",
+    "watch:css": "tailwindcss -i ./assets/css/custom-style.css -o ./assets/css/custom-style.build.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
